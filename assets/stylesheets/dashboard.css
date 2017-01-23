@@ -1,72 +1,96 @@
-/*
-Error: Undefined variable: "$sidebar-with".
-        on line 13 of assets/stylesheets/_base.sass
-        from line 3 of assets/stylesheets/dashboard.sass
+@font-face {
+  font-family: helveticaneue;
+  src: url("../fonts/helvetica-neue/helveticaneueltstd-roman.eot");
+  src: url("../fonts/helvetica-neue/helveticaneueltstd-roman.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica-neue/helveticaneueltstd-roman.woff") format("woff"), url("../fonts/helvetica-neue/helveticaneueltstd-roman.ttf") format("truetype"), url("../fonts/helvetica-neue/helveticaneueltstd-roman.svg#helveticaneueltstd-roman") format("svg"); }
+@font-face {
+  font-family: helveticaneuebd;
+  src: url("../fonts/helvetica-neue/HelveticaNeueLTStd-Bd.eot");
+  src: url("../fonts/helvetica-neue/HelveticaNeueLTStd-Bd.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica-neue/HelveticaNeueLTStd-Bd.woff") format("woff"), url("../fonts/helvetica-neue/HelveticaNeueLTStd-Bd.ttf") format("truetype"), url("../fonts/helvetica-neue/HelveticaNeueLTStd-Bd.svg#helveticaneueltstd") format("svg"); }
+@font-face {
+  font-family: Helvetica-UltLt;
+  src: url("../fonts/helvetica-neue/helveticaneueltstd-ultlt.eot");
+  src: url("../fonts/helvetica-neue/helveticaneueltstd-ultlt.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica-neue/helveticaneueltstd-ultlt.woff") format("woff"), url("../fonts/helvetica-neue/helveticaneueltstd-ultlt.ttf") format("truetype"), url("../fonts/helvetica-neue/helveticaneueltstd-ultlt.svg#helveticaneueltstd-ultlt") format("svg");
+  font-weight: lighter; }
+@font-face {
+  font-family: helveticaneuelt;
+  src: url("../fonts/helvetica-neue/helveticaneueltstd-lt.eot");
+  src: url("../fonts/helvetica-neue/helveticaneueltstd-lt.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica-neue/helveticaneueltstd-lt.woff") format("woff"), url("../fonts/helvetica-neue/helveticaneueltstd-lt.ttf") format("truetype"), url("../fonts/helvetica-neue/helveticaneueltstd-lt.svg#helveticaneueltstd-lt") format("svg");
+  font-weight: lighter; }
+@font-face {
+  font-family: helveticaneueth;
+  src: url("../fonts/helvetica-neue/helveticaneueltstd-th.eot");
+  src: url("../fonts/helvetica-neue/helveticaneueltstd-th.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica-neue/helveticaneueltstd-th.woff") format("woff"), url("../fonts/helvetica-neue/helveticaneueltstd-th.ttf") format("truetype"), url("../fonts/helvetica-neue/helveticaneueltstd-th.svg#helveticaneueth") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-Backtrace:
-assets/stylesheets/_base.sass:13
-assets/stylesheets/dashboard.sass:3
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/home/jonasporto/.rvm/gems/ruby-2.4.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$sidebar-with\".\A         on line 13 of assets/stylesheets/_base.sass\A         from line 3 of assets/stylesheets/dashboard.sass"; }
+body {
+  font: 100% helveticaneue, helvetica, arial, sans-serif; }
+
+.db-sidebar {
+  background: #34495e;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%; }
+
+.db-avatar {
+  background: #2ecc71;
+  display: block;
+  padding: 20px 15px;
+  color: #fff;
+  font-size: 0.81rem; }
+  .db-avatar img {
+    margin-right: 5px;
+    max-width: 50px;
+    vertical-align: middle; }
+
+.db-menu {
+  padding-top: 15px; }
+  .db-menu a {
+    color: #95a5a6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.88rem;
+    padding: 15px 0;
+    display: block; }
+    .db-menu a:before {
+      content: "";
+      background: url("../images/db-icons-menu.png");
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+      margin: 0 25px; }
+    .db-menu a:hover, .db-menu a:active {
+      background-color: #243342;
+      color: #fff; }
+    .db-menu a.db-ico-dashboard:before {
+      background-position: 0 0; }
+    .db-menu a:hover:before {
+      background-position: 0 -27px; }
+    .db-menu a.db-ico-course:before {
+      background-position: 0 -66px; }
+    .db-menu a.db-ico-course:hover:before {
+      background-position: 0 -93px; }
+    .db-menu a.db-ico-exam:before {
+      background-position: 0 -133px; }
+    .db-menu a.db-ico-exam:hover:before {
+      background-position: 0 -160px; }
+    .db-menu a.db-ico-qa:before {
+      background-position: 0 -199px; }
+    .db-menu a.db-ico-qa:hover:before {
+      background-position: 0 -226px; }
+    .db-menu a.db-ico-news:before {
+      background-position: 0 -264px; }
+    .db-menu a.db-ico-news:hover:before {
+      background-position: 0 -291px; }
+
+.db-container {
+  margin-left: 200px; }
+
+/*# sourceMappingURL=dashboard.css.map */
